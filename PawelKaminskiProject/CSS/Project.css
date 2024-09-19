@@ -1,0 +1,138 @@
+.navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aqua;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid aqua;
+    border-radius: 10px;
+}
+
+.navibuttons {
+    border: solid aquamarine 5px;
+    padding: 15px;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: normal;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+tr, th, td, table {
+    font-size: 20px;
+    border: 5px solid aqua;
+}
+
+
+.BookingForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    background-color: aqua;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: 20px;
+    bottom: 0px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+}
+
+
+input[type="text"] {
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+input[type="password"] {
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+input[type="date"] {
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 60px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h2 {
+    color: purple;
+    font-size: 32px;
+}
+
+p {
+    color: purple;
+    font-family: courier;
+    font-size: 160%;
+}
+
+select {
+    width: 70px;
+    height: 60px;
+}
+
+option {
+    width: 50px;
+}
+
+.button {
+    background-color: aqua;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+}
+
+.ErrorMessages {
+    text-align: center;
+    color: red;
+}

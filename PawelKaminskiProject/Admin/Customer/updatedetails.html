@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Project.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="maintext">
+            <h2>Customer Details: </h2>
+            <form action="updated.php" method="post">
+                <input type="hidden" name="ud_id" value="<?php echo $id; ?>">
+                <p> Name: <input type="text" name="ud_forename" value="<?php if(isset($forename)) echo $forename; ?>">
+                </p><br>
+                <p> Surname: <input type="text" name="ud_surname" value="<?php if(isset($surname)) echo $surname; ?>">
+                </p><br>
+                <p>Password: <input type="password" name="ud_password"
+                        value="<?php if(isset($password)) echo $password; ?>"></p><br>
+                <p>Telephone: <input type="text" name="ud_telephone"
+                        value="<?php if(isset($telephone))echo $telephone; ?>"></p><br>
+                <p>Email: <input type="text" name="ud_email" value="<?php if(isset($email))echo $email; ?>"></p><br>
+                <input type="Submit" name="submitdetails" class="button" value="Update">
+            </form>
+        </div>
+        <div class = "footer"></div>
+    </body>
+</body>
+
+</html>
+
+
+
+

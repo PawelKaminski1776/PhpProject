@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title></title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="../../CSS/Project.css">
+</head>
+
+<body>
+    <div class="navi">
+        <h2 class="navibuttons"><a href="../Customer/view all update delete.php">Customer</a></h2>
+        <h2 class="navibuttons"><a href="../Booking/view all update delete.php">Booking</a></h2>
+          <h2 class="navibuttons"><a href="../AdminPage.html">Home</a></h2>
+        </div>
+    <div class="main">
+        <h2>Update Lane Status:</h2>
+    <form action="updated.php" method="post">
+        <input type="hidden" name="ud_id" value="<?php echo $id; ?>">
+        <p>Status: <select name="ud_status" value="<?php if(isset($status)) echo $status; ?>">
+            <option value='A'>A</option>
+            <option value='U'>U</option>
+            <option value='M'>M</option>
+          </select></p>
+        <input type="Submit" name="SubmitDetails" class="button" value="Update">
+    </form>
+    </div>
+    <div class = "footer"></div>
+</body>
+
+</html>

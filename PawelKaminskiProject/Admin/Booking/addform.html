@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title></title>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../CSS/Project.css">
+</head>
+
+<body>
+  <div class="navi">
+    <h2 class="navibuttons"><a href="../Customer/view all update delete.php">Customer</a></h2>
+    <h2 class="navibuttons"><a href="view all update delete.php">Booking</a></h2>
+    <h2 class="navibuttons"><a href="../Lane/view all update delete.php">Lane</a></h2>
+  </div>
+  <div class="maintext">
+    <form action='add.php' method='post'>
+      <p>Customer ID: <input type='text' name='ccustid' value=''></p><br>
+      <p>Date: <input type='date' name='cbookingdate'></p><br>
+      <p>Time: <select name='ctime'>
+          <option value='16'>16</option>
+          <option value='17'>17</option>
+          <option value='18'>18</option>
+          <option value='19'>19</option>
+          <option value='20'>20</option>
+          <option value='21'>21</option>
+          <option value='22'>22</option>
+        </select></p>
+      <br>
+      <p>Number of people: <select name='cnumofpeople'>
+        <option value='1'>1</option>
+        <option value='2'>2</option>
+        <option value='3'>3</option>
+        <option value='4'>4</option>
+        <option value='5'>5</option>
+        <option value='6'>6</option>
+    </select></p><br>
+    <p>Payment Method: <select name='cpaymentmethod'>
+      <option value='Cash'>Cash</option>
+      <option value='Card'>Credit Card</option>
+  </select><br>
+    <h2>Credit Card details: </h2><br>
+            <p>Card Number: <input type='text' name='ccardnumber'></p><br>
+            <p>Expiry date: <select name='cexpirymonth'>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                    <option value='10'>10</option>
+                    <option value='11'>11</option>
+                    <option value='12'>12</option>
+                </select>
+                <select name='cexpiryyear'>
+                    <option value='23'>23</option>
+                    <option value='24'>24</option>
+                    <option value='25'>25</option>
+                    <option value='26'>26</option>
+                    <option value='27'>27</option>
+                    <option value='28'>28</option>
+                    <option value='29'>29</option>
+                    <option value='30'>30</option>
+                    <option value='31'>31</option>
+                    <option value='32'>32</option>
+                    <option value='33'>33</option>
+                    <option value='34'>34</option>
+                </select>
+            </p><br>
+            <p>Security Number: <input type='text' name='csecuritynumber'></p><br>
+      <input class="button" type='submit' name='submitdetails' value='SUBMIT'>
+    </form>
+  </div>
+  <div class="footer"></div>
+  </div>
+</body>
+
+</html>
